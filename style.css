@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+
+}
+#calc{
+    width: 40%;
+    height: 50%;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:". . . . . . . . " "in in in in in in in in ""btn7 btn7 btn8 btn8 btn9 btn9 div div""btn4 btn4 btn5 btn5 btn6 btn6 mul mul""btn1 btn1 btn2 btn2 btn3 btn3 sub sub""btn0 btn0 dot dot add add equal equal"" c c  c c  c c d d ";
+    border: 1px solid #E1ECC8;
+    border-radius: 5px;
+    background-color: #E1ECC8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 35px;
+    background: #e8e8e8;
+    box-shadow:  -13px 13px 26px #c5c5c5,
+                 13px -13px 26px #ffffff;
+}
+#input{
+    grid-area: in;
+    border: 2px solid #A0C49D;
+    border-radius: 8px;
+    font-size: larger;
+    margin: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+#bt8{
+    grid-area: btn8;
+}
+#bt9{
+    grid-area: btn9;
+}
+#div{
+    grid-area: div;
+}
+#bt7{
+    grid-area: btn7;
+}
+#bt4{
+    grid-area: btn4;
+}
+#bt5{
+    grid-area: btn5;
+}
+#bt6{
+    grid-area: btn6;
+}
+#mul{
+    grid-area: mul;
+}
+#sub{
+    grid-area: sub;
+}
+#bt0{
+    grid-area: btn0;
+}
+#add{
+    grid-area: add;
+}
+#dot{
+    grid-area: dot;
+}
+#equal{
+    grid-area: equal;
+}
+#bt2{
+    grid-area: btn2;
+}
+#bt1{
+    grid-area: btn1;
+}
+#bt3{
+    grid-area: btn3;
+}
+#clear{
+    grid-area: c;
+}
+#deleteone{
+    grid-area: d;
+}
+button{
+    background-color: #A0C49D;
+    border: 1px solid transparent;
+    height: 40px;
+    font-size: larger;
+    margin: 10px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+button:hover{
+    background-color: #C4D7B2;
+}
+.h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+    text-transform: capitalize;
+}
+@media screen and (max-width:400px){
+    #calc{
+        width:70%;
+        height:70%;
+    }
+    #input{
+        height:50px
+    }
+     button{
+        margin: 3px;
+     }
+}
+  
